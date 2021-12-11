@@ -1,14 +1,14 @@
 import { Container, Graphics, Sprite } from "pixi.js";
 
-window.onload = function () {
-  app = new PIXI.Application(
+export default window.onload = function () {
+  __PIXI_APP = new PIXI.Application(
     {
       width: 800,
       height: 800,
       backgroundColor: 0xAAAAAA
     }
   );
-  document.body.appendChild(app.view);
+  document.body.appendChild(__PIXI_APP.view);
 }
 export default class Fish extends Sprite {
   constructor() {
