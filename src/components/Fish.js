@@ -11,7 +11,7 @@ export default window.onload = function () {
   document.body.appendChild(__PIXI_APP.view);
   }
 
-export default class Fish extends Sprite {
+class Fish extends Sprite {
   constructor() {
     super();
 
@@ -26,6 +26,6 @@ contract() {
   fish.buttonMode = true;
 }
 expand() {
-  
+
 }
 }
