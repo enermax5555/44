@@ -9,20 +9,23 @@ export default window.onload = function () {
     }
   );
   document.body.appendChild(__PIXI_APP.view);
-}
+  }
+
 export default class Fish extends Sprite {
   constructor() {
     super();
+
     this.name = "fish";
     this.expand();
     this.contract();
   }
-}
-_expand() {
 
-}
-_contract() {
+contract() {
  let fish = new PIXI.Graphics();
   fish.interactive = true;
   fish.buttonMode = true;
+}
+expand() {
+  
+}
 }
